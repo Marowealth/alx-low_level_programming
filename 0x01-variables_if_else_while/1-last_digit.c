@@ -16,7 +16,7 @@ int main(void)
 {
 
 		int n;
-		int last_digit;
+		int a;
 
 
 
@@ -24,13 +24,12 @@ int main(void)
 
 				n = rand() - RAND_MAX / 2;
 
-					if (last_digit > 5)
-						printf("last digit of %d is %d and is greater than 5\n", n, last_digit);
-					else if (last_digit == 0)
-						printf("last digit of %d is %d and is 0\n", n, last_digit);
+					if (a > 5)
+						printf("last digit of %d is %d and is greater than 5\n", n, a);
+					else if (a == 0)
+						printf("last digit of %d is %d and is 0\n", n, a);
 					else
-						printf("last digit of %d is %d and is less than 6
-								and not 0\n", n, last_digit);
+						printf("last digit of %d is %d and is less than 6 and not 0\n",	n, a);
 
 					return (0);
 
