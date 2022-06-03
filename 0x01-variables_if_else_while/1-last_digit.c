@@ -16,7 +16,7 @@ int main(void)
 {
 
 		int n;
-		int last digit;
+		int last_digit;
 
 
 
