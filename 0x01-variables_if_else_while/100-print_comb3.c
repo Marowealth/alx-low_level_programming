@@ -8,28 +8,28 @@
 
 int main(void)
 {
-	int i, e;
+	int i, j, k;
 
-	i = 48;
-	e = 48;
+	i = 0;
 
-	while (e < 58)
+	while (i < 100)
 	{
-		i = 48;
-		while (i < 58)
-		{
-			if (e != i && e < i)
+		j = i % 10; /* singles digit */
+		k = i / 10; /* doubles digit */
+
+		if (k < j)
 			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
+				putchar(k + '0');
+				putchar(j + '0');
+
+				if (i < 89)
 				{
-					break;
+					putchar(44);
+					putchar(32);
+					
 				}
 			}
 			i++;
-		}
-		e++;
 	}
 	putchar('\n');
 	return (0);
