@@ -14,4 +14,5 @@ void print_rlphabet(void)
 		letter++;
 	}
 	_putchar('\n');
+	return (void);
 }
