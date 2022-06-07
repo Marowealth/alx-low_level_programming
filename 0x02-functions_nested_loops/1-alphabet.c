@@ -4,9 +4,9 @@
  * main - print alphabet
  * Return: void
 */
-void print_alphabet(void)
+void print_rlphabet(void)
 {
-	chat letter = 'a';
+	char letter = 'a';
 
 	while (letter <= 'z')
 	{
