@@ -4,7 +4,7 @@
  * main - print alphabet
  * Return: void
 */
-void print_rlphabet(void)
+void print_alphabet(void)
 {
 	char letter = 'a';
 
