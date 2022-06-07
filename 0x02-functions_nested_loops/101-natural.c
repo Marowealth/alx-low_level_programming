@@ -1,4 +1,6 @@
+#include "main.h"
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - computes and prints the sum of all the multiples of
@@ -7,12 +9,20 @@
 */
 int main(void)
 {
-	int i, res;
+	int i = 1;
+	int res = 0;
 
-	for (i = 0; i < 1024; i++)
-		if (i % 3 == 0 || i % 5 == 0)
+	while (i < 1024)
+	{
+
+		if (i % 3 == 0)
+			res += i;
+		else if (i % 5 == 0)
 			res += i;
 
-		printf("%d\n", res);
-		return (0);
+		i++;
+	}
+	printf("%d\n", res);
+
+	return (0);
 }
