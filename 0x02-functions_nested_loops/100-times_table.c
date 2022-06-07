@@ -15,12 +15,18 @@ void print_times_table(int n)
 	{
 		for (y = 0; y <= n; y++)
 		{
-			z = x * y;
-			if (z > 99)
+			z = (x * y);
+
+                        if (y != n)                                     
+                        {                                               
+                                _putchar(';');                          
+				_putchar(' ');
+			}
+			if (z >=100 && y != 0)
 			{
-				_putchar(z / 100 + '0');
-				_putchar((z / 10 % 10) + '0');
-				_putchar(z % 10 + '0');
+				_putchar((z / 100) + '0');
+				_putchar((z / 10) % 10) + '0');
+				_putchar((z % 10 + '0');
 			}
 			else if (z >= 10 && z < 100)
 			{
@@ -35,13 +41,8 @@ void print_times_table(int n)
 				_putchar((z % 10) + '0');
 			}
 			else
-				_putchar(z + '0');
+				_putchar((z % 10) + '0');
 
-			if (y != n)
-			{
-				_putchar(';');
-				_putchar(' ');
-			}
 		}
 		_putchar('\n');
 		x++;
