@@ -7,12 +7,13 @@
 
 int main(void)
 {
-	char text[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	char word[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+
 	unsigned int i;
 
-	for (i = 0; i < sizeof(text); i++)
+	for (i = 0; i < sizeof(word); i++)
 	{
-		_putchar(text[i];);
+		_putchar(word[i];);
 	}
 	_putchar('\n');
 
