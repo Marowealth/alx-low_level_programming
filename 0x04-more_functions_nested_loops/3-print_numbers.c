@@ -7,14 +7,11 @@
 
 void print_number(void)
 {
-	int n = 0;
+	int n;
 	
-	for (n = '0'; n <= '9'; n++)
-
-	while (n < 10)
+	for (n = 48; n < 58; n++)
 	{
-		_putcha(n + '0');
-		n += 1;
+		_putcha(n);
 	}
 	_putchar('\n');
 }
