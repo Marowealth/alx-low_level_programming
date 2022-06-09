@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * mul - function to check a digit
+ * _isdigit - function to check a digit
  * @c: entry
  * Return: Always int
 */
-int mul(int c)
+int _isdigit(int c)
 {
 	if (c >= 0 && c <= 9)
 	{
