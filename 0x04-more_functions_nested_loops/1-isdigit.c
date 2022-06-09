@@ -2,13 +2,12 @@
 
 /**
  * mul - function to check a digit
- * @a: the first digit to check
- * @b: the second digit to check
+ * @c: entry
  * Return: Always int
 */
-int mul(int a, int b)
+int mul(int c)
 {
-	if (a >= 0 && b <= 9)
+	if (c >= 0 && c <= 9)
 	{
 		return (1);
 	}
