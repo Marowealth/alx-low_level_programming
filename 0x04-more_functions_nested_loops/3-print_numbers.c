@@ -7,11 +7,11 @@
 
 void print_number(void)
 {
-	int n;
-	
-	for (n = 48; n < 58; n++)
+	int ch;
+
+	for (ch = 48; ch < 58; ch++)
 	{
-		_putcha(n);
+		_putcha(ch);
 	}
 	_putchar('\n');
 }
