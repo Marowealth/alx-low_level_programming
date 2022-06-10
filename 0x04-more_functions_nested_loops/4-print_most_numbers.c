@@ -7,11 +7,11 @@
  */
 void print_most_numbers(void)
 {
-	char digits;
+	int digits;
 
-	for (digits = 0; digits <= 9; digits++)
+	for (digits = 48; digits <= 58; digits++)
 	{
-		if (digits != 9 && digits != 4)
+		if (digits != 50 && digits != 52)
 		{
 			_putchar(digits);
 		}
