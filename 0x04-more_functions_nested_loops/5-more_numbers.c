@@ -10,12 +10,12 @@ void more_numbers(void)
 
 	for (replay = 0; replay < 10; replay++)
 	{
-		for (count = 0; count <= 14; count++)
+		for (count = 0; count < 15; count++)
 		{
-			if (count > 9)
+			if (count >= 10)
 			
-				_putchar((count / 10) + '0');
-			_putchar((count % 10) + '0');
+				_putchar((count / 10) + '48');
+			_putchar((count % 10) + '48');
 			
 		}
 	_putchar('\n');
