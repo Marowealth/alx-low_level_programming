@@ -6,7 +6,8 @@
  */
 void more_numbers(void)
 {
-	int replay, count;
+	char count;
+	int replay;
 
 	for (replay = 0; replay <= 9; replay++)
 	{
