@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print _number - function that prints 2 
+ * print _numbers - function that prints 2 
  * numbers from 0 to 9
  * Return: zero
 */
 
-void print_number(void)
+void print_numbers(void)
 {
 	char n = '0';
 
