@@ -2,6 +2,7 @@
 
 /**
  * _puts - fuction that print a string follwed by a new line
+ * @str: this is my first entry and input string
  * Return: void
 */
 void _puts(char *str)
