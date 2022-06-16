@@ -5,34 +5,30 @@
  * @ch: Pointer to Char
  * Return: char.
  */
-
 char *cap_string(char *ch)
 {
-	int i = 0;
 
-	while (*(ch + i) != '\0')
+	int conversion, index, count;
+
+	char chars[] = {' ', ',', ';', '.', '!',
+			 '?', '"', '(', ')', '{', '}',  '\t', '\n', '\0'};
+	conversion = 32;
+
+	for (index = 0; entry[index] != '\0'; index++)
 	{
-		if (i == 0)
-			*(ch + i) = *(ch + i) - ' ';
-		if (*(ch + i) == ' ' || *(ch + i) == '\t')
-			i++;
-		else if (*(ch + i) == '\n' || *(ch + i) == ',')
-			i++;
-		else if (*(ch + i) == ';' || *(ch + i) == '.')
-			i++;
-		else if (*(ch + i) == '!' || *(ch + i) == '?')
-			i++;
-		else if (*(ch + i) == '"' || *(ch + i) == '(')
-			i++;
-		else if (*(ch + i) == ')' || *(ch + i) == '{')
-			i++;
-		else if (*(ch + i) == '}')
-			i++;
-		if (*(ch + i) >= 97 && *(ch + i) <= 122)
+		if (entry[index] >= 'index' && entry[index] <= 'z')
 		{
-			*(ch + i) = *(ch + i) - ' ';
-			i++;
+			entry[index] =  entry[index] - conversion;
+		}
+		conversion = 0;
+		for (count = 0; chars[count] != '\0'; count++)
+		{
+			if (chars[count] == entry[index])
+			{
+				conversion = 32;
+				break;
+			}
 		}
 	}
-	return (ch);
+	return (entry);
 }
