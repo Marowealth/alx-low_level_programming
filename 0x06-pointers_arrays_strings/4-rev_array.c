@@ -7,19 +7,23 @@
 */
 void reverse_array(int *a, int n)
 {
-	int i;
-	int h;
+	
+	int i = 0;
+	int j = 0;
+	int *init, *final;
+	int aux = 0;
 
-	h = n - 1;
-	for (i = 0; i < (n / 2); i++)
+	init = a;
+	final = a;
+	n -= 1;
+	while (i < n)
+		i += 1;
+	while (j <= i)
 	{
-		int start, end;
-
-		
-		start = a[i];
-		end = a[h];
-		a[i] = end;
-		a[n - i - 1] = start;
-		h--;
+		aux = *(init + j);
+		*(init + j) = *(final + i);
+		*(final + i) = aux;
+		j++;
+		i--;
 	}
 }
