@@ -1,32 +1,36 @@
 #include "main.h"
 
 /**
- * cap_string - function that capitalizes all words of a string.
+ * *cap_string - function that capitalizes all words of a string.
  * @ch: Pointer to Char
- * Return: char.
+ * Return: ch
  */
 char *cap_string(char *ch)
-{
-	int conversion, d, count;
+{	
+	int i = 0;
 
-	char chars[] = {' ', ',', ';', '.', '!',
-			 '?', '"', '(', ')', '{', '}', '\t', '\n', '\0'};
-	conversion = 32;
-
-	for (d = 0; ch[d] != '\0'; d++)
+	while (*(ch + i) != '\0')
 	{
-		if (ch[d] >= 'd' && ch[d] <= 'z')
+		if (i == 0)
+			*(ch + i) = *(ch + i) - ' ';
+		if (*(ch + i) == ' ' || *(ch + i) == '\t')
+			i++;
+		else if (*(ch + i) == '\n' || *(ch + i) == ',')
+			i++;
+		else if (*(ch + i) == ';' || *(ch + i) == '.')
+			i++;
+		else if (*(ch + i) == '!' || *(ch + i) == '?')
+			i++;
+		else if (*(ch + i) == '"' || *(ch + i) == '(')
+			i++;
+		else if (*(ch + i) == ')' || *(ch + i) == '{')
+			i++;
+		else if (*(ch + i) == '}')
+			i++;
+		if (*(ch + i) >= 97 && *(ch + i) <= 122)
 		{
-			ch[d] =  ch[d] - conversion;
-		}
-		conversion = 0;
-		for (count = 0; chars[count] != '\0'; count++)
-		{
-			if (chars[count] == ch[d])
-			{
-				conversion = 32;
-				break;
-			}
+			*(ch + i) = *(ch + i) - ' ';
+			i++;
 		}
 	}
 	return (ch);
