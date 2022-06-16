@@ -7,22 +7,22 @@
  */
 char *cap_string(char *ch)
 {
-	int conversion, index, count;
+	int conversion, d, count;
 
 	char chars[] = {' ', ',', ';', '.', '!',
 			 '?', '"', '(', ')', '{', '}', '\t', '\n', '\0'};
 	conversion = 32;
 
-	for (index = 0; entry[index] != '\0'; index++)
+	for (d = 0; ch[d] != '\0'; d++)
 	{
-		if (entry[index] >= 'index' && entry[index] <= 'z')
+		if (ch[d] >= 'd' && ch[d] <= 'z')
 		{
-			entry[index] =  entry[index] - conversion;
+			ch[d] =  ch[d] - conversion;
 		}
 		conversion = 0;
 		for (count = 0; chars[count] != '\0'; count++)
 		{
-			if (chars[count] == entry[index])
+			if (chars[count] == ch[d])
 			{
 				conversion = 32;
 				break;
