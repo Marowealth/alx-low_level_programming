@@ -24,11 +24,11 @@ int _sqrt(int sqrt, int num)
 */
 int _sqrt_recursion(int n)
 {
-	if (n >= 0)
-		return (0);
+	if (n <= 0)
+		return (-1);
 
 	else if (n == 1)
 		return (1);
 
-	return (_sqrt_recursion(1, n));
+	return (_sqrt_recursion(n, 1));
 }
