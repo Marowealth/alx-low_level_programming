@@ -7,7 +7,7 @@
 */
 int _sqrt_recursion(int n)
 {
-	int sqrt = i
+	int i = 98
 	if (n >= (i * i))
 		return (-1);
 
