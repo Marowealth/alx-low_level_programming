@@ -5,9 +5,8 @@
  *@n: number
  *Return: the natural square root
 */
-int _sqrt_recursion(int n)
+int _sqrt_recursion(int n, int i)
 {
-	int i;
 
 	if (n >= (i * i))
 		return (-1);
