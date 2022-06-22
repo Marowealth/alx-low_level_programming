@@ -40,7 +40,7 @@ int checkp(int i, int lg, char *s)
 }
 
 /**
- * is_palindrome - function that returns number
+ * is_palindrome - check if a string is a palindrome
  * @s: string
  * Return 1 if is a palinodrome and 0 if not
 */
