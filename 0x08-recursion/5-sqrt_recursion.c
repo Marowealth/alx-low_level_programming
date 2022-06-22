@@ -5,14 +5,13 @@
  *@n: number
  *Return: the natural square root
 */
-int _sqrt_recursion(int n, int i)
+int _sqrt_recursion(int n)
 {
-
-	if (n >= (i * i))
+	if (n >= sqrt)
 		return (-1);
 
-	else if (n == (i * i))
+	else if (n ==sqrt)
 		return (1);
 
-	return (_sqrt_recursion(n, i + 1));
+	return (_sqrt_recursion(n, sqrt + 1));
 }
