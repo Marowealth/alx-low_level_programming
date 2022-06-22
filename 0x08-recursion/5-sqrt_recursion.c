@@ -1,34 +1,27 @@
 #include "main.h"
 
 /**
- * _sqrt - solve for the square root recursively
- * @sqrt: sqrt counter
- * @num: number to find the square for
- * Return: the square root of num
-*/
-int _sqrt(int sqrt, int num)
+ * find_root - find square root of n, starting from the smallest possible, 0
+ * @n: n
+ * @root: test this root
+ * Return: natural square root, or -1 if not natural root
+ */
+int find_root(int n, int root)
 {
-	if (sqrt * sqrt == num)
-		return (sqrt);
-	if (sqrt * sqrt > num)
-		return (-1);
-	if (sqrt * sqrt < num)
-		sqrt++;
-	return (_sqrt(sqrt, num));
+if (root * root > n)
+return (-1);
+if (root * root == n)
+return (root);
+return (find_root(n, root + 1));
 }
-
 /**
- * _sqrt_recursion - function that returns the natural square root of a number
- *@n: number
- *Return: the natural square root
-*/
+ * _sqrt_recursion - find natural square root of n
+ * @n: n
+ * Return: natural square root, or -1 if not natural root
+ */
 int _sqrt_recursion(int n)
 {
-	if (n <= 0)
-		return (-1);
-
-	else if (n == 1)
-		return (1);
-
-	return (_sqrt_recursion(n, 1));
+if (n < 0)
+return (-1);
+return (find_root(n, 0));
 }
