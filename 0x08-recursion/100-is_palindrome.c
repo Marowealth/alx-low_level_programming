@@ -18,7 +18,7 @@ int _lenght(char *s)
  * @lg: is the length of the string
  * @s: is the string
  * Return: 1 if is polindrome or 0 if not
-**/
+*/
 int checkp(int i, int lg, char *s)
 {
 	if (lg > 0)
@@ -47,5 +47,4 @@ int checkp(int i, int lg, char *s)
 int is_palindrome(char *s)
 {
 	return (checkp(0, _lenght(s) - 1, s));
-}
 }
