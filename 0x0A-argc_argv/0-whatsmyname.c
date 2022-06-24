@@ -2,10 +2,20 @@
 
 /**
  * main - function that prints name
+ * @argc: arguments count
+ * @argv: argument vector
  * Return: Always 0 (Success)
 */
 int main void(int argc, char *argv)
 {
-        printf("my name is Marowealth\n");
-        getch();
+	char name[] = {'m', 'a', 'r', 'o'};
+	int i = 0;
+
+	while (i < sizeof(name))
+	{
+		printf("%c", name[i]);
+		i++;
+		printf('\n');
+	}
+	getch();
 }
