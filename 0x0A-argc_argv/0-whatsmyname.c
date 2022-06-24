@@ -9,4 +9,3 @@ int main void(int argc, char *argv)
         printf("my name is Marowealth\n");
         getch();
 }
-
