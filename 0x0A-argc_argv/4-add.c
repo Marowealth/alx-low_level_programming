@@ -26,14 +26,14 @@ int main(int argc, char *argv[])
 				if (str[b] < 48 || str[b] > 57)
 				{
 					printf("Error\n");
-					retutn (1);
+					return (1);
 				}
 			}
 		}
 	}
 	for (i = 1; i < argc; i++)
 	{
-		sum += atio(argv[i]);
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
