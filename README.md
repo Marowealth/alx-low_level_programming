@@ -1,1 +1,1 @@
-argc argv in ALX C prograamming
+ALX C programming
