@@ -16,6 +16,7 @@ int main void(int argc, char *argv[])
 		printf("%c", name[i]);
 		i++;
 		printf('\n');
+		(void)argc;
 	}
 	return (0);
 }
