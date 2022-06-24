@@ -6,7 +6,7 @@
  * @argv: argument vector
  * Return: Always 0 (Success)
 */
-int main void(int argc, char *argv)
+int main void(int argc, char *argv[])
 {
 	char name[] = {'m', 'a', 'r', 'o'};
 	int i = 0;
@@ -17,5 +17,5 @@ int main void(int argc, char *argv)
 		i++;
 		printf('\n');
 	}
-	getch();
+	return (0);
 }
