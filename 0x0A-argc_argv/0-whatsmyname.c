@@ -8,15 +8,7 @@
 */
 int main(int argc, char *argv[])
 {
-	char name[] = {'m', 'a', 'r', 'o'};
-	int i = 0;
-
-	while (i < sizeof(name))
-	{
-		printf("%c", argv[0]);
-		i++;
-		printf('\n');
+		printf("%s\n", argv[0]);
 		(void)argc;
-	}
-	return (0);
+		return (0);
 }
