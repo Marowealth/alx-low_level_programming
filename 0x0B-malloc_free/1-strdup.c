@@ -10,6 +10,7 @@ char *_strdup(char *str)
 {
 	char *a;
 	int x, y;
+
 	if (str == NULL)
 		return (NULL);
 
