@@ -11,7 +11,6 @@ char *_strcpy(char *x, char *y);
  * @owner: owner to create mem and assign to for dog
  * Return: pointer to new dog_t (struct dog)
 */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 
