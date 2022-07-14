@@ -9,7 +9,7 @@
 int len(const char *str)
 {
 		int count;
-		
+
 		if (str == NULL)
 		return (0);
 	for (count = 0; str[count] != '\0'; count++)
@@ -32,7 +32,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new_node == NULL || str == NULL)
 	{
 		free(new_node);
-		return NULL;
+		return (NULL);
 	}
 	new_node->str = strdup(str);
 	new_node->len = len(str);
