@@ -1,5 +1,6 @@
 #include "lists.h"
-
+#include <stdio.h>
+#include <string.h>
 /**
  * len - Calculates the length of a string.
  * @str: Constant string
