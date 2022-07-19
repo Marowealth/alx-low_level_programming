@@ -28,10 +28,10 @@ listint_t *reverse_listint(listint_t **head)
 	}
 	while ((hold != NULL)
 	{
-		hold = (*head)->next;
 		(*head)->next = current;
 		current = *head;
 		*head = hold;
+		hold = (*head)->next;
 	}
 
 	(*head)->next = current;
